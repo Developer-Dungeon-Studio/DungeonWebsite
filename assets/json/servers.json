@@ -1,0 +1,22 @@
+{
+    "wouldyou": {
+        "servers": 125,
+        "ping": null,
+        "users": 176130
+    },
+    "cryptohelper": {
+        "servers": 219,
+        "ping": 0,
+        "users": 341964
+    },
+    "ticketer": {
+        "servers": 114,
+        "ping": -126,
+        "users": 207013
+    },
+    "portfoliobot": {
+        "servers": 65,
+        "ping": -155,
+        "users": 137206
+    }
+}

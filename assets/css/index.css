@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #111111;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    font-display: swap;
+    overflow-x: hidden;
+    user-select: none;
+    background-image: url('/assets/img/bg.webp');
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #000000;
+    position: absolute;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: #5865F2; 
+    border-radius: 10px;
+}
+  
+body::-webkit-scrollbar-thumb:hover {
+    background: #454FBF; 
+}
+
+body .present {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 190px;
+}
+
+body .present .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+body .present .content .title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-display: swap;
+}
+
+body .present .content .description {
+    margin: 0;
+    font-size: 1.2rem;
+    font-display: swap;
+    margin-top: -5px;
+    width: 70%;
+}
+
+body .present .image img {
+    width: 400px;
+    height: 400px;
+    margin-left: -20px;
+}
+
+body .wave {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 140px;
+    margin-left: -10px;
+    translate: scale(0, 1) !important;
+}
+
+body .projects, body .staff {
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    margin-top: -115px;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+body .staff {
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+body .projects .title, body .staff .title {
+    color: #ffffff;
+    margin-bottom: 50px;
+    margin-top: -25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+body .projects .list, body .staff .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #181818;
+    flex-wrap: wrap;
+    width: 80%
+}
+
+body .projects .list .project, body .staff .list .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+    background-color: #111111;
+    padding: 35px 50px;
+    border-radius: 9px;
+    text-align: center;
+    width: 210px;
+    position: relative;
+}
+
+body .projects .list .project .image, body .staff .list .user .image {
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+body .projects .list .project .content .name, body .staff .list .content .name {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+body .projects .list .project .content .rname {
+    margin: -20px 0 20px 0;
+    color: #aaaaaa;
+}
+
+body .staff .list .content .rname {
+    margin: -13px 0 0 0;
+    color: #aaaaaa;
+}
+
+body .projects .list .project .button, body .staff .list .user .button {
+    width: 100%;
+    background-color: #5865F2;
+    text-align: center;
+    border-radius: 8px;
+    padding: 7px 40px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: ease-in-out .2s;
+    font-weight: 500;
+}
+
+body .projects .list .project .button:hover, body .staff .list .user .button:hover {
+    background-color: #454FBF;
+}
+
+body .projects .list .project .button.disabled, body .staff .list .project .button.disabled {
+    background-color: #6A6A6A;
+    pointer-events: none;
+}
+
+body .staff .list .user .spotify {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 10px;
+    background-color: #18191c;
+    width: 110%;
+    border-radius: 8px;
+    margin-left: -35px;
+    padding: 2px 25px 10px 25px;
+}
+
+body .staff .list .user .spotify .activity {
+    color: #b3b5b8;
+    font-weight: 600;
+    margin: 5px 0;
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin-left: -12px;
+}
+
+body .staff .list .user .spotify .info {
+    display: flex;
+    flex-direction: row;
+    margin-left: -12px;
+}
+
+body .staff .list .user .spotify .info .image {
+    width: 82px;
+    height: 82px;
+    border-radius: 7px;
+}
+
+body .staff .list .user .spotify .info .name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+body .staff .list .user .spotify .info .name .content {
+    color: #d7d8d9;
+    font-weight: 600;
+    margin: 0;
+    max-width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body .staff .list .user .spotify .info .name .artist {
+    color: #d7d8d9;
+    font-weight: 400;
+    margin: -3px 0;
+    font-size: .95rem;
+    max-width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body .staff .list .user .spotify .info .name .album {
+    color: #d7d8d9;
+    font-weight: 400;
+    margin: 0;
+    font-size: .95rem;
+    max-width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body .staff .list .user .desc {
+    color: #aaaaaa;
+    margin: 0 0 25px 0;
+}
+
+body .staff .list .user .time {
+    position: absolute;
+    bottom: 7px;
+    color: #aaaaaa;
+    margin: 0;
+}

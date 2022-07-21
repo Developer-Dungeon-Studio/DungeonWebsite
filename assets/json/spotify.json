@@ -1,0 +1,44 @@
+{
+    "spotify": [
+        {
+            "uid": "805898988402376725",
+            "logo": "/assets/img/logo.webp",
+            "artist": "himself",
+            "name": "Busy Coding",
+            "id": "none",
+            "album": "the Dungeon"
+        },
+        {
+            "uid": "347077478726238228",
+            "logo": "https://i.scdn.co/image/ab67616d0000b273f9f27162ab1ed45b8d7a7e98",
+            "artist": "Rihanna",
+            "name": "Don't Stop The Music",
+            "id": "0ByMNEPAPpOR5H69DVrTNy",
+            "album": "Good Girl Gone Bad: Reloaded"
+        },
+        {
+            "uid": "799319682862809169",
+            "logo": "/assets/img/logo.webp",
+            "artist": "himself",
+            "name": "Busy Coding",
+            "id": "none",
+            "album": "the Dungeon"
+        },
+        {
+            "uid": "852521383006961687",
+            "logo": "/assets/img/logo.webp",
+            "artist": "himself",
+            "name": "Busy Coding",
+            "id": "none",
+            "album": "the Dungeon"
+        },
+        {
+            "uid": "526649097546104844",
+            "logo": "/assets/img/logo.webp",
+            "artist": "himself",
+            "name": "Busy Coding",
+            "id": "none",
+            "album": "the Dungeon"
+        }
+    ]
+}

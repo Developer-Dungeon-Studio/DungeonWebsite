@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Developers Dungeon Studios</title>
+    <meta name="keywords" content="ticketer, ticketer.developersdungeon.xyz, ticket, discord ticket, discord ticket bot, ticket bot, discord, ticket discord, crypto helper, would you, discord game, ticket tool premium, ticket tool">
+    <meta name="description" content="Take your server to the next level with bots from Developers Dungeon Studios!">
+    <meta name="author" content="Developer Dungeon Studios">
+    <meta property="og:image"  content="https://developersdungeon.xyz/assets/img/logo.webp">
+
+    
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/responsive/index.responsive.css">
+    <link rel="stylesheet" href="/assets/css/partials/navbar.css">
+    <link rel="stylesheet" href="/assets/css/partials/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/assets/img/logo-round.webp" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.webp">
+</head>
+<body class>
+    <%- include('./partials/navbar.ejs') %>
+
+    <div class="present">
+        <div class="content">
+            <h1 class="title">Developers Dungeon</h1>
+            <p class="description">Take your server to the next level with bots from Developers Dungeon Studios!</p>
+        </div>
+        <div class="image">
+            <img src="/assets/img/logo.png" alt="Mockup">
+        </div>
+    </div>
+    <svg height="224" viewBox="0 0 1208 224" fill="none" xmlns="http://www.w3.org/2000/svg" class="wave" id="projects">
+        <g filter="url(#filter0_d_708_34)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 80H54C104 80 204 80 304 62C404 44 504 8 604 8C704 8 804 44 904 74C1004 104 1104 128 1154 140L1204 152V224H1154C1104 224 1004 224 904 224C804 224 704 224 604 224C504 224 404 224 304 224C204 224 104 224 54 224H4V80Z" fill="#181818" transform="translate(-1)"></path>
+        </g>
+        <defs>
+        <filter id="filter0_d_708_34" x="0" y="0" width="1208" height="224" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dy="-4"></feOffset>
+        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_708_34"></feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_708_34" result="shape"></feBlend>
+        </filter>
+        </defs>
+    </svg>
+    <div class="projects">
+        <h2 class="title">Our projects</h2>
+        <div class="list">
+            <div class="project">
+                <img src="/assets/img/cryptohelper.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">Crypto helper</h2>
+                    <p class="rname"><%= String(servers.cryptohelper.servers) %> Guilds</p>
+                    <a href="https://top.gg/bot/747050613656911892" class="button">Visit</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/assets/img/portfolio.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">Portfolio Bot</h2>
+                    <p class="rname"><%= String(servers.portfoliobot.servers) %> Guilds</p>
+                    <a href="https://top.gg/bot/977331811371876352" class="button">Visit</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/assets/img/ticketer.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">Ticketer</h2>
+                    <p class="rname"><%= String(servers.ticketer.servers) %> Guilds</p>
+                    <a href="https://ticketer.gg" class="button">Visit</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/assets/img/wouldyou.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">Would You</h2>
+                    <p class="rname"><%= String(servers.wouldyou.servers) %> Guilds</p>
+                    <a href="https://top.gg/bot/981649513427111957" class="button">Visit</a>
+                </div>
+            </div>
+            <!--<div class="project">
+                <img src="/assets/img/slopecrasher.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">Slopecrashers Bot</h2>
+                    <p class="rname">Work in progress</p>
+                    <a href="https://inviter.developersdungeon.xyz" class="button disabled">Visit</a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <div class="staff" id="staff">
+        <h2 class="title">Meet the team</h2>
+        <div class="list">
+            <div class="user">
+                <% let mezo = spotify[spotify.findIndex((s) => s.uid == '347077478726238228')] %>
+                <img src="/assets/img/mezo_0001.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">Mezo#0001</h2>
+                    <p class="rname">Dominik Koch</p>
+                </div>
+                <div class="spotify">
+                    <p class="activity">Current Activity</p>
+                    <div class="info">
+                        <img src="<%= mezo.logo %>" class="image" alt="Img">
+                        <div class="name">
+                            <p class="content"><%= mezo.name %></p>
+                            <p class="artist">by <%= mezo.artist %></p>
+                            <p class="album">on <%= mezo.album %></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="time">Current time: <% const mezo_time = new Date(); var utcTime = mezo_time.getTime() + (mezo_time.getTimezoneOffset() * 60000); var timeOffset = 2; var time = new Date(utcTime + (3600000 * timeOffset)); %><%= `${(time.getHours() + 24) % 12 || 12}:${time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes() }${time.getHours() >= 12 ? 'pm' : 'am' }` %></p>
+            </div>
+            <div class="user">
+                <% let black = spotify[spotify.findIndex((s) => s.uid == '805898988402376725')] %>
+                <img src="/assets/img/black_0001.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">BLACK#0001</h2>
+                    <p class="rname">Finn Kötting</p>
+                </div>
+                <div class="spotify">
+                    <p class="activity">Current Activity</p>
+                    <div class="info">
+                        <img src="<%= black.logo %>" class="image" alt="Img">
+                        <div class="name">
+                            <p class="content"><%= black.name %></p>
+                            <p class="artist">by <%= black.artist %></p>
+                            <p class="album">on <%= black.album %></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="time">Current time: <% const black_time = new Date(); var utcTime = black_time.getTime() + (black_time.getTimezoneOffset() * 60000); var timeOffset = 2; var time = new Date(utcTime + (3600000 * timeOffset)); %><%= `${(time.getHours() + 24) % 12 || 12}:${time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes()}${time.getHours() >= 12 ? 'pm' : 'am' }` %></p>
+            </div>
+            <div class="user">
+                <% let rt = spotify[spotify.findIndex((s) => s.uid == '526649097546104844')] %>
+                <img src="/assets/img/rt_4935.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">RT#4935</h2>
+                    <p class="rname">Rusty Trim</p>
+                </div>
+                <div class="spotify">
+                    <p class="activity">Current Activity</p>
+                    <div class="info">
+                        <img src="<%= rt.logo %>" class="image" alt="Img">
+                        <div class="name">
+                            <p class="content"><%= rt.name %></p>
+                            <p class="artist">by <%= rt.artist %></p>
+                            <p class="album">on <%= rt.album %></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="time">Current time: <% const rt_time = new Date(); var utcTime = rt_time.getTime() + (rt_time.getTimezoneOffset() * 60000); var timeOffset = -4; var time = new Date(utcTime + (3600000 * timeOffset)); %><%= `${(time.getHours() + 24) % 12 || 12}:${time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes()}${time.getHours() >= 12 ? 'pm' : 'am' }` %></p>
+            </div>
+            <div class="user">
+                <% let deem = spotify[spotify.findIndex((s) => s.uid == '799319682862809169')] %>
+                <img src="/assets/img/Marc_6513.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">MarcDev#6513</h2>
+                    <p class="rname">Marc</p>
+                </div>
+                <div class="spotify">
+                    <p class="activity">Current Activity</p>
+                    <div class="info">
+                        <img src="<%= deem.logo %>" class="image" alt="Img">
+                        <div class="name">
+                            <p class="content"><%= deem.name %></p>
+                            <p class="artist">by <%= deem.artist %></p>
+                            <p class="album">on <%= deem.album %></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="time">Current time: <% const marc_time = new Date(); var utcTime = marc_time.getTime() + (marc_time.getTimezoneOffset() * 60002); var timeOffset = 2; var time = new Date(utcTime + (3600000 * timeOffset)); %><%= `${(time.getHours() + 24) % 12 || 12}:${time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes()}${time.getHours() >= 12 ? 'pm' : 'am' }` %></p>
+            </div>
+            <div class="user">
+                <img src="/assets/img/blank.webp" alt="Logo" class="image">
+                <div class="content">
+                    <h2 class="name">This could be you</h2>
+                    <p class="desc">You want to become part of our team? Create a ticket on our discord server to apply!</p>
+                    <a href="https://discord.gg/6MWrqNwy4Z" class="button">Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/assets/js/partials/navbar.js" type="text/javascript"></script>
+</body>
+</html>

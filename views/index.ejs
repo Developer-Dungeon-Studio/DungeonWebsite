@@ -107,7 +107,7 @@
                 <div class="spotify">
                     <p class="activity">Current Activity</p>
                     <div class="info">
-                        <img src="<%= mezo.logo %>" class="image" alt="Img">
+                        <img src="<%=  mezo.logo || "/assets/img/logo.webp" %>" class="image" alt="Img">
                         <div class="name">
                             <p class="content"><%= mezo.name %></p>
                             <p class="artist">by <%= mezo.artist %></p>
@@ -127,7 +127,7 @@
                 <div class="spotify">
                     <p class="activity">Current Activity</p>
                     <div class="info">
-                        <img src="<%= black.logo %>" class="image" alt="Img">
+                        <img src="<%= black.logo || "/assets/img/logo.webp" %>" class="image" alt="Img">
                         <div class="name">
                             <p class="content"><%= black.name %></p>
                             <p class="artist">by <%= black.artist %></p>
@@ -147,7 +147,7 @@
                 <div class="spotify">
                     <p class="activity">Current Activity</p>
                     <div class="info">
-                        <img src="<%= rt.logo %>" class="image" alt="Img">
+                        <img src="<%= rt.logo || "/assets/img/logo.webp" %>" class="image" alt="Img">
                         <div class="name">
                             <p class="content"><%= rt.name %></p>
                             <p class="artist">by <%= rt.artist %></p>
@@ -167,7 +167,7 @@
                 <div class="spotify">
                     <p class="activity">Current Activity</p>
                     <div class="info">
-                        <img src="<%= deem.logo %>" class="image" alt="Img">
+                        <img src="<%= deem.logo || "/assets/img/logo.webp" %>" class="image" alt="Img">
                         <div class="name">
                             <p class="content"><%= deem.name %></p>
                             <p class="artist">by <%= deem.artist %></p>

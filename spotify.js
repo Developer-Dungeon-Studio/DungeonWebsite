@@ -16,6 +16,7 @@ const getSpotify = async () => {
       },
   
     }).then(function (res) {
+      let coverArt ='/assets/img/logo.webp'
       if (!res.data.spotify || res.data.spotify == undefined || res.data.spotify == null) {
       spotidata = {
         coverArt: '/assets/img/logo.webp',
@@ -34,15 +35,13 @@ const getSpotify = async () => {
       } else {
         spotidata = res.data.spotify;
         if ( spotidata.coverArt == undefined || spotidata.coverArt == null) {
-          spotidata = {
-            coverArt: '/assets/img/logo.webp',
-          };
+          coverArt = '/assets/img/logo.webp';
         }
       }
   
       spotify.push({ 
         uid: id, 
-        logo: spotidata.coverArt,
+        logo: coverArt,
         artist: spotidata.artists.map((artist) => { return artist.name }).join(", "),
         name: spotidata.trackName,
         id: spotidata.trackId,

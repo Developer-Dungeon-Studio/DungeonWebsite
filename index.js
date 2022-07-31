@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const { Client, Intents } = require("discord.js");
+var cors = require('cors')
 const { writeFileSync, readFileSync } = require("fs");
 require("dotenv").config();
 
@@ -13,6 +14,8 @@ app.set("trust proxy", 1);
 app.use("/assets", express.static(path.join(__dirname, "/assets")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors())
+
 
 console.clear();
 console.log(" > Website started on port 6080");

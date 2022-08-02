@@ -23,7 +23,7 @@ const client = new Client({
 
 client.login(process.env.TOKEN);
 
-client.on("messageCreate", (messages) => {
+client.on("messageCreate", (message) => {
   if (message.content == "<@980421710685831209>")
   message.reply(`Hey, Im the Guard of this Dungeon`);
 })
@@ -141,7 +141,7 @@ app.get("/", (req, res) => {
 app.post("/api/servers", (req, res) => {
   let rawdata = readFileSync(path.join(__dirname, "/assets/json/servers.json"));
   let data = JSON.parse(rawdata);
-  if (req.query.code == "5BhTaxnK3zbhQ3dkaqBBgJB3rgrDEb5T") {
+  if (req.query.code == process.env.APITOKENWEB) {
     switch (req.body.bot) {
       case "wouldyou":
         data.wouldyou = {

@@ -53,7 +53,7 @@ const getSpotify = async () => {
   setTimeout(async () => {
     await axios({
       method: "POST",
-      url: `https://developersdungeon.xyz/api/spotify?code=${process.env.APITOKEN}`,
+      url: `https://developersdungeon.xyz/api/spotify?code=${process.env.APITOKENWEB}`,
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

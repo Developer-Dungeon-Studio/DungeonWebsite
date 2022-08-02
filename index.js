@@ -2,7 +2,6 @@
 const express = require("express");
 const path = require("path");
 const { Client, Intents } = require("discord.js");
-var cors = require('cors')
 const { writeFileSync, readFileSync } = require("fs");
 require("dotenv").config();
 
@@ -10,11 +9,9 @@ require("dotenv").config();
 const app = express();
 app.listen(6080);
 app.set("view engine", "ejs");
-app.set("trust proxy", 1);
 app.use("/assets", express.static(path.join(__dirname, "/assets")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors())
 
 
 console.clear();
